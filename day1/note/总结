@@ -1,0 +1,68 @@
+# 本节课内容
+- 环境安装
+- html
+
+
+# 环境安装：selenium
+1， python 的包：pip install selenium
+1,1   你需要一个浏览器（谷歌浏览器）
+2,  安装一个浏览器的驱动：
+    - 注意：安装浏览器的驱动，这个驱动的版本必须和浏览器的版本兼容。
+    - 如何进行兼容：先找到谷歌浏览器的版本：
+    - 如何查看驱动版本号和浏览器版本兼容：打开驱动的 notes.txt 文件
+    - 一般来说，谷歌浏览器是什么版本，我们就下载对应的驱动版本。比如 78 的浏览器下载 78 的
+    驱动， v51 的浏览器下载v2.14 的驱动；
+    - 巨坑。最新的谷歌浏览器，v79, 80 的浏览器，下载80的驱动，会有问题。v71 的驱动版本，
+    匹配 80 的浏览期，就是说。71的驱动，是比较稳定的驱动。 
+    - 没有位数限制，win32
+    - 下载浏览器驱动以后，把 chromedriver.exe 文件放到 python的安装根目录下。
+    - 如果不知道 python 安装在哪里， 环境变量去查看。
+
+
+# 如果python 目录不知道，可以指定 excuteable_path =chromedriver.exe 的路径
+
+
+# html语言
+
+# html 的作用， 为什么要学？
+因为 html 是 python 进行元素定位的依据。
+
+使用 f12 可以查看 html 的源码
+
+html 的结构：
+- <html> </html>  标签对, 标签名称
+- 属性 <body 属性名称="属性的值" 属性名称2="属性值2">
+- 标签的文本内容 text 文本 <html>  </html>
+- 嵌套标签
+<html>
+    <head></head>
+</html>
+总结： html 的结构构成部分都可以用来进行元素定位。
+
+
+# name 和 value 属性值
+只要是用户输入有关的，都要带 name
+name 就时和后台交互的接口数据当中 key
+{
+    "username": "yuz",
+    "favor_star"："chenbaoguo",
+    "favor_tv": :"quanyou"
+}
+
+
+最常使用的标签名称：
+- 1， a, 点点点用的最多，href
+- 2,  img, 用的多， src
+- 3, iframe.  name 属性， id
+- 4, input , 通常会有 name 属性， value 可能是动态变化。
+- 5， select , name 属性值 里面只有 option会生效
+只要是设计到用户输入，记住 name 属性记住。
+
+重点属性：
+readOnly, disabled
+
+
+下节课预告：元素定位
+
+    
+
