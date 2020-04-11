@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p onmouseover="red_it(this)" onmouseout="green_it(this)">这是我们的第二个网页。</p>
+
+    <script>
+        let name = '越' ;
+        console.log(name);
+
+        function get_dalao(dalao_name) {
+            //函数注释
+            if (dalao_name == "yuze") {
+                console.log("66666");
+            }
+            else if (dalao_name == "cc") {
+                console.log("777");
+            }
+            else {
+                console.log("888");
+            }
+        }
+
+        function red_it(e) {
+            e.style.color = 'red';
+        }
+
+        function green_it(e) {
+            e.style.color = 'green';
+        }
+
+        window.onload = function() {
+            window.alert("欢迎来到大佬的世界。")
+        }
+
+        get_dalao("yuze");
+
+
+    </script>
+</body>
+</html>
